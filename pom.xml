@@ -12,7 +12,6 @@
     <url>http://maven.apache.org</url>
 
     <dependencies>
-
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-core</artifactId>
