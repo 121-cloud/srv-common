@@ -11,7 +11,7 @@ import io.vertx.core.http.HttpMethod;
  * @author lijing@yonyou.com
  */
 //运行时业务角色
-public class ActionURI {
+public class ActionURI { 
 	private String uri;
 	/**
 	 * @return the uri
