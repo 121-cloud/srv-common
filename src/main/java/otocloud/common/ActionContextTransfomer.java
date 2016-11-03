@@ -107,8 +107,8 @@ public class ActionContextTransfomer {
 		options.addHeader(AppMessageHeader.TOKEN_KEY, httpContext.getAccessToken()); 		
 		//账户信息切换
 		if(httpContext.getTargetAccount() != null && !httpContext.getTargetAccount().isEmpty()){
-			options.addHeader(AppMessageHeader.ACCOUNT_KEY, httpContext.getTargetAccount());
-			options.addHeader(AppMessageHeader.ACTOR_ACCOUNT_KEY, httpContext.getAccount()); 
+			options.addHeader(AppMessageHeader.ACCOUNT_KEY, httpContext.getTargetAccount()); //本企业账户
+			options.addHeader(AppMessageHeader.ACTOR_ACCOUNT_KEY, httpContext.getAccount()); //协作方操作员账户
 		}
 		options.addHeader(AppMessageHeader.ACTOR_KEY, httpContext.getActor()); 		
 
@@ -118,14 +118,17 @@ public class ActionContextTransfomer {
 	public static JsonObject fromMessageHeaderToActor(MultiMap headerMap){	
 		JsonObject actorJsonObject = new JsonObject();
 		
+		//token
 		if(headerMap.contains(AppMessageHeader.TOKEN_KEY)){
 			actorJsonObject.put(AppMessageHeader.TOKEN_KEY, headerMap.get(AppMessageHeader.TOKEN_KEY));			
 		};
 		
+		//操作员账户
 		if(headerMap.contains(AppMessageHeader.ACTOR_ACCOUNT_KEY)){
 			actorJsonObject.put(AppMessageHeader.ACTOR_ACCOUNT_KEY, headerMap.get(AppMessageHeader.ACTOR_ACCOUNT_KEY));			
 		};
 		
+		//操作员
 		if(headerMap.contains(AppMessageHeader.ACTOR_KEY)){
 			actorJsonObject.put(AppMessageHeader.ACTOR_KEY, headerMap.get(AppMessageHeader.ACTOR_KEY));			
 		};
