@@ -103,7 +103,6 @@ public class ActionContextTransfomer {
 	}
 	
 	public static void setBusMessageHeader(ActionHttpContext httpContext, DeliveryOptions options){		
-
 		options.addHeader(AppMessageHeader.TOKEN_KEY, httpContext.getAccessToken()); 		
 		//账户信息切换
 		if(httpContext.getTargetAccount() != null && !httpContext.getTargetAccount().isEmpty()){

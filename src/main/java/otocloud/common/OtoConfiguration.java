@@ -18,11 +18,14 @@ public class OtoConfiguration {
 	public static final String COMPONENT_COMMON = "component_common";
 	public static final String COMPONENT_CFG = "component_config";
 	
+	//----web服务器配置----
 	public static final String WEBSERVER_CFG = "webserver_config"; 
 	public static final String WEBSERVER_PORT = "webserver_port"; //web服务器端口
+	public static final String EB_DELIVERY_OPTIONS = "delivery_options";//设置event bus的发送配置
 	
 	public static final String EVENTBUS_ENABLED = "eventbus_enabled"; //是否启用web事件总线
 	public static final String STATIC_RES_SERVICE = "static_res_service"; //是否静态资源服务
+	//------------------
 	
 	public static final String CLUSTER_CFG_FILE = "hazelcast.xml";
 	
