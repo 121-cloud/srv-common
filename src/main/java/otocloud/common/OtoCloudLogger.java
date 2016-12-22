@@ -145,7 +145,7 @@ public class OtoCloudLogger {
 	  }
 	  
 	  protected String formatMessage(JsonObject actor, String msg) {
-		  return "[" + appInstId + "]-[" + actor.toString() + "] " + msg;		
+		  return "[" + appInstId + "]-[" + ((actor==null)?"":actor.toString()) + "] " + msg;		
 	  }
 
 	}
