@@ -14,6 +14,8 @@ public class OtoConfiguration {
 	public static final String CLUSTER_HOST = "cluster_host";
 	public static final String CLUSTER_PORT = "cluster_port";	
 	
+	public static final String WEBSERVER_HOST = "run_webserver"; //是否作为web服务器HOST
+	
 	public static final String COMPONENT_DEPLOY = "component_deployment";
 	public static final String COMPONENT_COMMON = "component_common";
 	public static final String COMPONENT_CFG = "component_config";
