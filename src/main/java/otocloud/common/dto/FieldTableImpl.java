@@ -1,4 +1,4 @@
-package otocloud.common.dto;
+/*package otocloud.common.dto;
 
 import com.google.common.collect.ComparisonChain;
 
@@ -9,12 +9,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
+*//**
  * Field名称(0)、Field类型(1)、Field对象(2)、来源Class(3)、来源类实例(4)。
  * String, Class, Field, Class, Object
  * <p>
  * zhangyef@yonyou.com on 2015-11-03.
- */
+ *//*
 class FieldTableImpl implements FieldTable {
 
     private int columnNum;
@@ -39,14 +39,14 @@ class FieldTableImpl implements FieldTable {
         this.columns[4] = new ColumnImpl<>(this);
     }
 
-    /**
+    *//**
      * 插入行数据。
      * 每插入一行数据，都会新建一个{@linkplain Row}，但不会新建{@linkplain Column}。
      *
      * @param field    字段.
      * @param instance 字段所在实例.
      * @return 新插入的行.
-     */
+     *//*
     @Override
     public Row insert(Field field, Object instance) {
         String fieldName = field.getName(); //column-0
@@ -71,7 +71,7 @@ class FieldTableImpl implements FieldTable {
         return row;
     }
 
-    /**
+    *//**
      * {@inheritDoc}
      * <p>
      * 查找fieldType所指定的类型或其子类型的字段。
@@ -79,7 +79,7 @@ class FieldTableImpl implements FieldTable {
      * @param fieldName 字段名称.
      * @param fieldType 字段类型.
      * @return
-     */
+     *//*
     @Override
     public List<Row> find(String fieldName, Class fieldType) {
         return this.rows.stream().filter(row -> {
@@ -95,14 +95,14 @@ class FieldTableImpl implements FieldTable {
         }).collect(Collectors.toList());
     }
 
-    /**
+    *//**
      * {@inheritDoc}
      *
      * @param name      字段名.
      * @param fieldType 字段类型.
      * @param clazz     来源类的类型.
      * @return
-     */
+     *//*
     @Override
     public List<Row> find(String name, Class fieldType, Class clazz) {
 
@@ -139,3 +139,4 @@ class FieldTableImpl implements FieldTable {
         return Arrays.asList(this.columns);
     }
 }
+*/

@@ -1,4 +1,4 @@
-package otocloud.common.dto;
+/*package otocloud.common.dto;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -10,18 +10,18 @@ import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
+*//**
  * ObjectConvertor Tester.
  *
  * @author zhangye
  * @version 1.0
  * @since <pre>十一月 3, 2015</pre>
- */
+ *//*
 public class ObjectConvertorTest {
 
-    /**
+    *//**
      * Method: toDTO(Class<T> dto, Object... objects)
-     */
+     *//*
     @Test
     public void testToDTO() throws Exception {
         FirstWholeFieldEntity wholeFieldEntity = new FirstWholeFieldEntity();
@@ -152,3 +152,4 @@ public class ObjectConvertorTest {
     }
 
 } 
+*/

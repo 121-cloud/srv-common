@@ -1,4 +1,4 @@
-package otocloud.common.dto;
+/*package otocloud.common.dto;
 
 import org.apache.commons.lang3.StringUtils;
 import otocloud.common.dto.fetch.*;
@@ -10,22 +10,22 @@ import java.lang.reflect.Type;
 import java.util.Collection;
 import java.util.List;
 
-/**
+*//**
  * 提供不同类型实例间的相互转换。
  * 如，从Model到DTO的转换。
  * <p>
  * zhangyef@yonyou.com 2015-11-02.
- */
+ *//*
 public class ObjectConvertor {
 
-    /**
+    *//**
      * 根据指定的输出类型，将一个或多个类实例转换成输出类型。
      *
      * @param dto     输出类型的Class实例.
      * @param objects 类实例.
      * @param <T>     输出类型.
      * @return 输出类型的对象实例.
-     */
+     *//*
     public static <T> T toDTO(Class<T> dto, Object... objects) {
         T obj = null;
         try {
@@ -78,7 +78,7 @@ public class ObjectConvertor {
         fromField.setAccessible(isDataFieldAccessible);
     }
 
-    /**
+    *//**
      * 如果是继承关系的类，新建子类类型的实例。
      * 如果没有继承关系，新建目标类型的实例。
      *
@@ -87,7 +87,7 @@ public class ObjectConvertor {
      * @param fromInstance
      * @param fromField
      * @return
-     */
+     *//*
     private static boolean setNestedFieldValue(Object toInstance, Field field,
                                                Object fromInstance, Field fromField) {
 
@@ -246,13 +246,13 @@ public class ObjectConvertor {
         return rows;
     }
 
-    /**
+    *//**
      * 根据注解策略，选择合适的行。
      *
      * @param field
      * @param choices
      * @return
-     */
+     *//*
     private static Row chooseOne(Field field, List<Row> choices) {
         if (choices == null) return null;
 
@@ -307,12 +307,12 @@ public class ObjectConvertor {
         return fetcher;
     }
 
-    /**
+    *//**
      * 制作属性表。
      *
      * @param objects 对象列表.
      * @return 属性查找表.
-     */
+     *//*
     private static FieldTable makeFieldTable(Object... objects) {
         FieldTable fieldTable = new FieldTableImpl();
 
@@ -327,3 +327,4 @@ public class ObjectConvertor {
         return fieldTable;
     }
 }
+*/

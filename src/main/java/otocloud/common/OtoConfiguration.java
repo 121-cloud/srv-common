@@ -16,6 +16,8 @@ public class OtoConfiguration {
 	
 	public static final String WEBSERVER_HOST = "run_webserver"; //是否作为web服务器HOST
 	
+	public static final String SESSION_CFG = "sessionservice_config"; //session服务器配置
+	
 	public static final String COMPONENT_DEPLOY = "component_deployment";
 	public static final String COMPONENT_COMMON = "component_common";
 	public static final String COMPONENT_CFG = "component_config";
