@@ -64,16 +64,18 @@ public class MessageBodyConvention {
      * 当用户发起登录请求时，WebServer会生成与该用户对应的会话({@code Session})。
      * 在后续的HTTP请求中，同一个用户的会话将在不同应用之间传递。
      */
-    public static final String SESSION = "session";
+    //public static final String SESSION = "session";
 
     /**
      * 当前登录用户的企业账户ID。
      */
-    public static final String SESSION_ACCT_ID = "acctId";
+    public static final String SESSION_ACCT_ID = "acct_id";
 
     /**
      * 当前登录用户的ID。
      */
-    public static final String SESSION_USER_ID = "userId";
+    public static final String SESSION_USER_ID = "user_id";
+    
+    public static final String SESSION_USER_NAME = "user_name";
 
 }
