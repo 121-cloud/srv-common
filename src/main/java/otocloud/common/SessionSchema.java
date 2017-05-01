@@ -14,9 +14,9 @@ public class SessionSchema {
     public static final String ACCESS_TOKEN = "access_token";
     public static final String EXPIRES_IN = "[EXPIRE]"; //失效时间
     
-    public static final String BIZ_UNIT_ID = "biz_unit_id";
+/*    public static final String BIZ_UNIT_ID = "biz_unit_id";
     public static final String IS_GLOBAL_BU = "is_global_bu";  //是否全局业务单元
     public static final String BIZ_UNIT_POST_ID = "biz_unit_post_id";  //岗位
     public static final String APP_ACTIVITY_ID = "app_activity_id";  //当前活动
-
+*/
 }

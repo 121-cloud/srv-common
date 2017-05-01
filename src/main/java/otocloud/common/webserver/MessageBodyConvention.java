@@ -33,13 +33,13 @@ public class MessageBodyConvention {
      * 例如, 如果请求的URL为"http://.../app/:id?num=1"，
      * 那么该字段对应的JsonObject中包含"id"(路径参数)和"num"(查询参数)两个Key。
      */
-    public static final String HTTP_QUERY = "queryParams";
+    public static final String HTTP_QUERY = "query_params";
 
     /**
      * HTTP请求时的原始URL地址，该地址是用户输入的完整地址。
      * 例如 {@code http://localhost:8080/api/app/fun/1?para1=0}。
      */
-    public static final String HTTP_ABS_URI = "absUri";
+    public static final String HTTP_ABS_URI = "abs_uri";
 
     /**
      * HTTP请求时原始的URL地址，该地址只包含完整地址({@linkplain MessageBodyConvention#HTTP_ABS_URI})中端口号以后的部分。
